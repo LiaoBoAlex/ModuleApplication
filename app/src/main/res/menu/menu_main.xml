@@ -1,0 +1,43 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.boliao.myapplication.MainActivity">
+    <item
+        android:id="@+id/action_settings"
+        android:orderInCategory="100"
+        android:title="@string/action_settings"
+        app:showAsAction="never" />
+    <item android:id="@+id/view"
+        android:title="View"
+        android:menuCategory="container"
+        android:orderInCategory="6"
+        android:alphabeticShortcut="v">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item android:id="@+id/all_folders" android:numericShortcut="1" android:title="All Folders"/>
+                <item android:id="@+id/folders" android:numericShortcut="2" android:title="Folders"/>
+                <item android:id="@+id/files" android:numericShortcut="3" android:title="Files"/>
+            </group>
+
+            <item android:id="@+id/sort_by" android:alphabeticShortcut="s" android:title="Sort by"/>
+            <item android:id="@+id/fields" android:alphabeticShortcut="f" android:title="Fields"/>
+            <item android:id="@+id/view1"
+                android:title="View"
+                android:menuCategory="container"
+                android:orderInCategory="6"
+                android:alphabeticShortcut="v">
+                <menu>
+                    <group android:checkableBehavior="single">
+                        <item android:id="@+id/all_folders1" android:numericShortcut="1" android:title="All Folders"/>
+                        <item android:id="@+id/folders1" android:numericShortcut="2" android:title="Folders"/>
+                        <item android:id="@+id/files1" android:numericShortcut="3" android:title="Files"/>
+                    </group>
+
+                    <item android:id="@+id/sort_by1" android:alphabeticShortcut="s" android:title="Sort by"/>
+                    <item android:id="@+id/fields1" android:alphabeticShortcut="f" android:title="Fields"/>
+
+                </menu>
+            </item>
+        </menu>
+    </item>
+</menu>
